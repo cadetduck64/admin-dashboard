@@ -1,3 +1,241 @@
-.box {
+html,
+body {
+    height: 100%;
+}
+
+#container {
+    background-color: rgb(201, 201, 201);
+    align-content: center;
+    display: grid;
+    max-width: auto ;
+    resize: both;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 15% 85%;
+}
+
+.profilepicture {
+    justify-content: flex-start;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border: solid purple;
+}
+
+/*  */
+
+#header {
+    background-color: white;
+    display: grid;
+    height: fit-content;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 4fr 2fr;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    border: solid peru
+}
+
+#searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+input {
+    background-color: aliceblue;
+    border-radius: 50px;
+    height: 30px;
+    width: 600px
+}
+
+#notifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
     border: solid black;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: start;
+    padding-left: 30px;
+}
+
+#headerbuttongroup {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*  */
+
+.profilepicture {
+    justify-content: flex-start;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border: solid purple;
+}
+
+#profilelink {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+#profilediv {
+    display: grid ;
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+    justify-content: space-around;
+    border: solid black;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.headerbutton {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    color: white;
+    padding: 5px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(0, 137, 250);
+}
+
+#dashboard {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row: 1 / 3;
+    border: solid black;
+    color: white;
+    background-color: rgb(0, 137, 250);
+}
+
+#dashoptions {
+    display: grid;
+    grid-template-rows: repeat(7, 50px);
+}
+
+#utilities {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+}
+
+/* main focus */
+
+#content {
+    display: grid;
+    padding: 15px;
+    gap: 15px;
+    grid-row: 2;
+    grid-column: 2 / 3;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: solid black;
+    height: 100%;
+}
+
+#projectsbox {
+    grid-row: 1 / 3;
+    grid-column: 1;
+}
+
+#projects {
+    display: grid;
+    justify-self: center;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card {
+    background-color: white;
+    display: grid;
+    padding-left: 20px;
+    grid-template-rows: 3fr, 1fr;
+    grid-template-columns: 3fr, 1fr;
+    justify-self: center;
+    border: solid black;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    align-items: end;
+}
+
+.projectinteract {
+    display: flex;
+    grid-row: 2;
+    grid-column: 2;
+    height: 50px;
+    width: 150px;
+    justify-content: space-evenly;
+    border: solid black;
+    align-items: center;
+}
+
+#paragraph {
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+#announcementsbox {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+#announcements {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    border-radius: 10px;
+}
+
+.update {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 3;
+}
+
+#trendingbox{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+#trending{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    border-radius: 10px;
+}
+
+.trend {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-grow: 3;
 }
